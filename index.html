@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -23,6 +24,15 @@
                 <a href="#">Skill</a>
                 <a href="#">Portfolio</a>
                 <a href="#">Contact</a>
+                <div class="toggle-menu">
+                    <input type="checkbox" class="checkbox" id="chk">
+    
+                    <label class="label" for="chk">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
             </nav>
         </div>
     </header>
@@ -150,7 +160,7 @@
 
                     <div class="card">
                         <div class="img">
-                            <img src="assets/fullbox.png" alt="fullbox-img">
+                            <img src="assets/music-player.png" alt="music-player-img">
                         </div>
                         <div class="desc-card">
                             <h3>Fullbox</h3>
@@ -165,30 +175,26 @@
             </div>
         </section>
 
-        <section>
+        <section class="skills">
             <div class="main-skills inter">
                 <div class="text-skill">
-                    <h3>Main Skill</h3>
-                    <p>Hover the cursor over the card to read...
+                    <h3>Main Skills</h3>
+                    <p id="skill-info">Hover the cursor over the card to read...
                     </p>
                 </div>
                 <div class="box-skill">
-                    <div data-info="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua."><i class="fa-brands fa-html5"></i></div>
-                    <div data-info="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua."><i class="fa-brands fa-css3-alt"></i></div>
-                    <div data-info="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua."><i class="fa-brands fa-js"></i></div>
-                    <div data-info="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua."><i class="fa-brands fa-react"></i></div>
-                    <div data-info="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua."></div>
-                    <div data-info="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua."><i class="fa-brands fa-bootstrap"></i></div>
+                    <div data-info="Linguagem de marcação usada para criar e estruturar o conteúdo de páginas web."><i class="devicon-html5-plain colored"></i></div>
+                    <div data-info="Linguagem de estilo que define a apresentação e o layout das páginas web, permitindo personalizar a aparência dos elementos HTML."><i class="devicon-css3-plain colored"></i></div>
+                    <div data-info="Linguagem de programação que permite adicionar interatividade e dinamismo às páginas web, manipulando conteúdo e respondendo a ações do usuário."><i class="devicon-javascript-plain colored"></i></div>
+                    <div data-info="Biblioteca JavaScript para construção de interfaces de usuário interativas e reutilizáveis, facilitando o desenvolvimento de aplicações web complexas."><i class="devicon-react-original colored"></i></div>
+                    <div data-info="Framework de CSS baseado em classes utilitárias que permite criar designs responsivos e personalizados de forma rápida e eficiente."><i class="devicon-tailwindcss-original colored"></i></div>
+                    <div data-info="Framework de CSS que fornece uma coleção de componentes e estilos pré-definidos para construir layouts web responsivos e modernos com facilidade."><i class="devicon-bootstrap-plain colored"></i></div>
                 </div>
             </div>
         </section>
 
+        <script src="script.js"></script>
+        <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
     </main>
 </body>
 

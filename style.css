@@ -18,6 +18,11 @@ body {
   align-items: center;
   z-index: 10000;
   background-color: #040e14;
+  transition: background 0.2s linear;
+}
+
+body.white{
+  background: #fff;
 }
 
 main {
@@ -56,6 +61,11 @@ main {
   font-weight: 700;
 }
 
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
 .navbar a {
   text-decoration: none;
   padding-right: 40px;
@@ -68,6 +78,50 @@ main {
 .navbar a:hover {
   color: #0da5e0;
   transition: 0.2s ease-in-out;
+}
+
+
+.checkbox{
+  opacity: 0;
+  position: absolute;
+}
+
+.label{
+  background-color: #0da5e0;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  height: 26px;
+  width: 50px;
+  transition: scale(1.5);
+}
+
+.label .ball{
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball{
+  transform: translateX(24px);
+}
+
+.fa-moon{
+  color: #f1c40f;
+}
+
+.fa-sun{
+  color: #f39c12;
 }
 
 /* HOME */
@@ -100,11 +154,17 @@ main {
   font-size: 4.5rem;
 }
 
+.text-home h1.white{
+  color: #0da5e0;
+  text-shadow: 4px 4px 0 #06445c;
+}
+
 .text-home span {
   font-size: 35px;
   color: #0da5e0;
   text-transform: uppercase;
 }
+
 
 .btn a {
   padding: 20px 40px;
@@ -143,11 +203,9 @@ main {
 }
 
 /* ABOUT ME */
-
 .about-me {
-  height: 90vh;
+  height: auto;
 }
-
 .about-me h1 {
   color: #ffffff;
   text-align: center;
@@ -230,7 +288,7 @@ main {
 /* PROJECTS */
 
 .projects {
-  padding: 0 80px;
+  padding: 120px 80px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -250,6 +308,7 @@ main {
 
 .card {
   width: calc((100% / 2) - 50px);
+  min-width: 400px;
   height: 600px;
   display: flex;
   flex-direction: column;
@@ -293,9 +352,47 @@ main {
 
 /* MAIN SKILLS */
 
+.skills {
+  margin-top: 300px;
+}
+
 .main-skills{
   display: flex;
   margin-top: 190px;
+  align-items: flex-start;
   justify-content: space-between;
+  color: #fff;
 }
 
+.box-skill {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.box-skill div {
+  min-height: 150px;
+}
+
+.box-skill i{
+  font-size: 4.5rem;
+  background-color: #122b3d;
+  padding: 40px 30px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  transition: 0.2s ease-in-out;
+}
+
+.box-skill i:hover{
+  outline: 5px solid #fff;
+}
+
+.text-skill h3{
+  font-size: 3rem;
+  color: #0da5e0;
+}
+
+.text-skill p {
+  width: 500px;
+  font-size: 1.2rem;
+}

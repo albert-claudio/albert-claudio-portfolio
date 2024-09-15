@@ -19,30 +19,30 @@
             <a href="#" class="logo">Albert C.</a>
 
             <nav class="navbar">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Skill</a>
-                <a href="#">Portfolio</a>
-                <a href="#">Contact</a>
-                <div class="toggle-menu">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skill</a>
+                <a href="#projects">Portfolio</a>
+                <a href="#contact">Contact</a>
+                <!--<div class="toggle-menu">
                     <input type="checkbox" class="checkbox" id="chk">
     
                     <label class="label" for="chk">
                         <i class="fas fa-moon"></i>
                         <i class="fas fa-sun"></i>
                         <div class="ball"></div>
-                    </label>
+                    </label>-->
                 </div>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="home inter">
+        <section class="home inter" id="home">
             <div class="home-content">
                 <div class="text-home">
                     <h1>Hello World,<br />I'm Albert </h1>
-                    <span id="span">Web developer</span>
+                    <span id="span">Junior Web Developer</span>
                     <div class="btn">
                         <a href="#">Hiro me</a>
                         <a href="#">Let's talk</a>
@@ -61,7 +61,7 @@
 
         </section>
 
-        <section class="about-me inter">
+        <section class="about-me inter" id="about">
             <div class="text-about">
                 <h1>About <span class="span">me</span></h1>
                 <p>Junior Front-End Developer passionate about creating incredible digital experiences since he was 17
@@ -112,7 +112,7 @@
             </div>
         </section>
 
-        <section>
+        <section id="projects">
             <div class="projects">
                 <h2>Projects</h2>
                 <div class="box-card">
@@ -125,36 +125,36 @@
                             <p>At FullBox, dive into a universe of discoveries! ... Explore now!</p>
                         </div>
                         <div class="btn-card">
-                            <a href="">Live Demo</a>
-                            <a href="">Code <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href="https://fullbox.vercel.app/">Live Demo</a>
+                            <a href="https://github.com/albert-claudio/FullBox">Code <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                         </div>
                     </div>
                     
                     <div class="card">
                         <div class="img">
-                            <img src="assets/fullbox.png" alt="fullbox-img">
+                            <img src="assets/real-estate.png" alt="real-estate-img">
                         </div>
                         <div class="desc-card">
-                            <h3>Fullbox</h3>
-                            <p>At FullBox, dive into a universe of discoveries! ... Explore now!</p>
+                            <h3>Real Estate</h3>
+                            <p>find houses, apartments that fit your tastes and budget...make an appointment now!</p>
                         </div>
                         <div class="btn-card">
-                            <a href="">Live Demo</a>
-                            <a href="">Code <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href="https://imobiliaria-claudio.vercel.app/">Live Demo</a>
+                            <a href="https://github.com/albert-claudio/real-estate">Code <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                         </div>
                     </div>
 
                     <div class="card">
                         <div class="img">
-                            <img src="assets/fullbox.png" alt="fullbox-img">
+                            <img src="assets/quiz.png" alt="quiz-img">
                         </div>
                         <div class="desc-card">
-                            <h3>Fullbox</h3>
-                            <p>At FullBox, dive into a universe of discoveries! ... Explore now!</p>
+                            <h3>Quiz</h3>
+                            <p>train your javascript skills, answer questions about the currently most used language in the world...Play now!</p>
                         </div>
                         <div class="btn-card">
-                            <a href="">Live Demo</a>
-                            <a href="">Code <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href="https://github.com/albert-claudio/QUIZ-REACT">Live Demo</a>
+                            <a href="https://quiz-in-react.vercel.app/">Code <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                         </div>
                     </div>
 
@@ -164,18 +164,18 @@
                         </div>
                         <div class="desc-card">
                             <h3>Fullbox</h3>
-                            <p>At FullBox, dive into a universe of discoveries! ... Explore now!</p>
+                            <p>It's a simple music player, with only three songs, but it's enough to train my skills... listen now!</p>
                         </div>
                         <div class="btn-card">
-                            <a href="">Live Demo</a>
-                            <a href="">Code <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href="https://music-player-eta-seven.vercel.app/">Live Demo</a>
+                            <a href="https://github.com/albert-claudio/music-player">Code <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="skills">
+        <section class="skills" id="skills">
             <div class="main-skills inter">
                 <div class="text-skill">
                     <h3>Main Skills</h3>
@@ -183,15 +183,36 @@
                     </p>
                 </div>
                 <div class="box-skill">
-                    <div data-info="Linguagem de marcação usada para criar e estruturar o conteúdo de páginas web."><i class="devicon-html5-plain colored"></i></div>
-                    <div data-info="Linguagem de estilo que define a apresentação e o layout das páginas web, permitindo personalizar a aparência dos elementos HTML."><i class="devicon-css3-plain colored"></i></div>
-                    <div data-info="Linguagem de programação que permite adicionar interatividade e dinamismo às páginas web, manipulando conteúdo e respondendo a ações do usuário."><i class="devicon-javascript-plain colored"></i></div>
-                    <div data-info="Biblioteca JavaScript para construção de interfaces de usuário interativas e reutilizáveis, facilitando o desenvolvimento de aplicações web complexas."><i class="devicon-react-original colored"></i></div>
-                    <div data-info="Framework de CSS baseado em classes utilitárias que permite criar designs responsivos e personalizados de forma rápida e eficiente."><i class="devicon-tailwindcss-original colored"></i></div>
-                    <div data-info="Framework de CSS que fornece uma coleção de componentes e estilos pré-definidos para construir layouts web responsivos e modernos com facilidade."><i class="devicon-bootstrap-plain colored"></i></div>
+                    <div data-info="Markup language used to create and structure the content of web pages."><i class="devicon-html5-plain colored"></i></div>
+                    <div data-info="Style language that defines the presentation and layout of web pages, allowing you to customize the appearance of HTML elements."><i class="devicon-css3-plain colored"></i></div>
+                    <div data-info="Programming language that allows you to add interactivity and dynamism to web pages, manipulating content and responding to user actions."><i class="devicon-javascript-plain colored"></i></div>
+                    <div data-info="JavaScript library for building interactive and reusable user interfaces, facilitating the development of complex web applications."><i class="devicon-react-original colored"></i></div>
+                    <div data-info="CSS framework based on utility classes that allows you to create responsive and personalized designs quickly and efficiently."><i class="devicon-tailwindcss-original colored"></i></div>
+                    <div data-info="CSS framework that provides a collection of pre-defined components and styles to build modern, responsive web layouts with ease."><i class="devicon-bootstrap-plain colored"></i></div>
                 </div>
             </div>
         </section>
+
+       <section class="contact" id="contact">
+            <h1>Contact <span>me!</span></h1>
+            <form action="https://formsubmit.co/el/albertclaudio58@gmail.com.br" method="POST" data-form>
+                <div class="form-row">
+                    <input name="nome" type="text" placeholder="Full name" id="nome" required>
+                    <input name="email" type="email" placeholder="Email Adress" id="email" required>
+                </div>
+                <div class="form-row">
+                    <input name="ddd" type="text" placeholder="DDD" id="ddd" required>
+                    <input name="telefone" type="text" placeholder="Tell" id="telefone" required>
+                </div>
+                <div class="form-row">
+                    <input type="text" placeholder="Email Subject" required>
+                </div>
+                <div class="form-row">
+                    <textarea placeholder="Your message" required></textarea>
+                </div>
+                <button type="submit" data-button>Send</button>
+            </form>
+       </section>
 
         <script src="script.js"></script>
         <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>

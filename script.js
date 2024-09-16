@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+ document.addEventListener('DOMContentLoaded', function () {
     const icons = document.querySelectorAll('.box-skill > div');
     const info = document.getElementById('skill-info');
 

@@ -152,6 +152,7 @@ main {
   color: white;
   text-shadow: 4px 4px 0 gray;
   font-size: 4.5rem;
+  text-align: left;
 }
 
 .text-home h1.white{
@@ -325,18 +326,22 @@ main {
   min-width: 400px;
   height: 600px;
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
-  padding: 30px;
+  padding: 30px 30px 50px;
   border: 3px solid #0da5e0;
   border-radius: 12px;
 }
 
 .card .img {
   width: 100%;
+  height: 200px;
 }
 
 .card img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 5px;
 }
 
@@ -344,6 +349,7 @@ main {
   margin-top: 20px;
   margin-bottom: 120px;
   color: #fff;
+  height: 120px;
 }
 
 .desc-card h3 {
@@ -351,7 +357,7 @@ main {
 }
 
 .desc-card p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-top: 10px;
 }
 
@@ -414,7 +420,9 @@ main {
 /* CONTACT */
 
 .contact{
-  width: 400px;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
   padding: 40px;
   margin: 0 auto;
   align-items: center;
@@ -435,23 +443,30 @@ h1 span {
 form {
   display: flex;
   flex-direction: column;
-  width: 450px;
+  min-width: 700px;
+  margin-top: 30px;
 }
 
 .form-row {
   display: flex;
   justify-content: space-between;
   margin-bottom: 15px;
+  gap: 10px;
 }
 
 input, textarea {
-  background-color: #0a0c10;
+  background-color: transparent;
   border: 1px solid #0a87b1;
   color: #fff;
-  padding: 10px;
+  padding: 20px;
   border-radius: 5px;
   width: 100%;
   outline: none;
+  font-size: 1rem;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #06445c;
 }
 
 textarea {
@@ -459,6 +474,7 @@ textarea {
   height: 100px;
   min-height: 10rem;
   resize: vertical;
+  resize: none;
 }
 
 button {
@@ -485,6 +501,26 @@ button:disabled{
   background-color: #555b69;
 }
 
+.aaaaa {
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+  border-top: 1px solid #fff;
+}
+
+.aaaaa p {
+  font-size: 1.1rem;
+}
+
+.aaaaa p a {
+  text-decoration: none;
+}
+
+.aaaaa p a:hover {
+  text-shadow: 0 0 5px#f1a3e0;
+}
+
 .sucess,
 .error{
   text-align: center;
@@ -497,3 +533,4 @@ button:disabled{
 .error{
   color: tomato;
 }
+

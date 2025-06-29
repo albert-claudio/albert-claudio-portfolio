@@ -17,6 +17,10 @@
     --montserrat: 'Montserrat', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--background-color);
     height: 100vh;

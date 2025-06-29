@@ -1,0 +1,76 @@
+/* Importa as variáveis de cor do seu projeto para manter a consistência */
+:root {
+--background-color: #040e14;
+--main-blue-color: #0da5e0;
+--white: #fff;
+--poppins: 'Poppins', sans-serif;
+--montserrat: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--poppins);
+    background-color: var(--background-color);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    max-width: 600px;
+}
+
+.error-image {
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 40px;
+}
+
+.container h1 {
+    font-family: var(--montserrat);
+    font-size: 6rem;
+    color: var(--main-blue-color);
+    text-shadow: 4px 4px 0 #06445c;
+    margin-bottom: 0;
+    line-height: 1;
+}
+
+.container h2 {
+    font-family: var(--montserrat);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.container p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 40px;
+    color: #cdd5e0; /* Um branco um pouco mais suave */
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 35px;
+    background-color: var(--main-blue-color);
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #0b8cbc;
+    transform: translateY(-3px);
+}
